@@ -1,16 +1,16 @@
 'use strict';
 
-// Main palette creation and styling
+// Color Swatch creation
 
-var body = document.querySelector("body");
+var pixelPainter = document.querySelector("#pixelPainter");
 var palette = document.createElement('div');
 
-palette.id = "palette";
+palette.id = "main_palette";
 palette.style.height = "600px";
 palette.style.width = "600px";
 palette.style.border = "10px solid green";
 
-body.appendChild(palette);
+pixelPainter.appendChild(palette);
 
 // Rows creations (one div per row)
 for (var i = 1 ; i <= 60; i++){
