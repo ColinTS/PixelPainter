@@ -11,3 +11,20 @@
   margin: 0 auto;
 }
 
+#main_color_swatch{
+  margin: 40px auto;
+}
+
+#clear{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#erase{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+h1{
+  text-align: center;
+}
