@@ -1,5 +1,6 @@
 class Palette{
-  constructor(size, border, display, paletteGrid){
+
+  constructor(size, border, display, paletteGrid, Colors){
     this._element = document.createElement('div');
     this._element.style.border = border;
     this._element.style.display = display;
@@ -15,6 +16,11 @@ class Palette{
       pixels.className = "pixelsClass";
       pixels.style.backgroundColor = "white";
       rows.appendChild(pixels);
+
+      pixels.addEventListener('click',function(){
+        this.style.backgroundColor = Colors.ColorCache;
+      });
+
       }
     }
   }
@@ -24,29 +30,22 @@ class Palette{
   }
 }
 
-class Colors{
-  constructor(size, border, display, colorContainer){
-    this._element = document.createElement('div');
-    this._element.style.border = border;
-    this._element.style.display = display;
+//       pixels.addEventListener('click', function() {
+//         this.style.backgroundColor = colorCache;
+//       });
 
-    for (var i = 1 ; i <= 10; i++){
-      var rows_colorSwatch = document.createElement('div');
-      colorContainer._element.appendChild(rows_colorSwatch);
+//       var mousedown = false;
+//       document.onmousedown = function(){
+//         mousedown = true;
+//       };
+//       document.onmouseup = function(){
+//         mousedown = false;
+//       };
 
-      for (var j = 1 ; j <= 6; j++){
-        var uniqueColors = document.createElement('div');
-        var randnumb1 = Math.floor(Math.random() * 255);
-        var randnumb2 = Math.floor(Math.random() * 255);
-        var randnumb3 = Math.floor(Math.random() * 255);
-        uniqueColors.style.backgroundColor = "rgb(" + (255 - randnumb1) + "," + (255 - randnumb2)  + "," + (255 - randnumb3) +")";
-        rows_colorSwatch.appendChild(uniqueColors);
-      }
-    }
-  }
-
-  get element() {
-    return this._element;
-  }
-}
+//       pixels.addEventListener('mouseover', function(){
+//         if(mousedown === true){
+//           this.style.backgroundColor = colorCache;
+//           console.log(mousedown);
+//         }
+//       });
 

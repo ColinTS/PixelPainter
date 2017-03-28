@@ -1,4 +1,5 @@
 class GridContainer{
+
   constructor(id, width, height, border){
     this._element = document.createElement('div');
     this._element.id = id;
