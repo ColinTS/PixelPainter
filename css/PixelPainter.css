@@ -24,7 +24,9 @@ background-image: url('http://kingofwallpapers.com/css-background/css-background
 .pixelsClass{
   background-color: white;
   border-radius: 25px;
+
   display: inline-block;
+
 }
 
 #clear {
@@ -59,4 +61,10 @@ h1{
 
 .pixelsClass{
   background-color: white;
+  font-size: 40px;
 }
+
+.pixelsClass{
+  background-color: white;
+}
+
