@@ -1,5 +1,7 @@
-.body{
-  background-color : green;
+body
+{
+background-image: url('http://kingofwallpapers.com/css-background/css-background-004.jpg');
+
 }
 
 #swatchCommandContainer{
@@ -15,16 +17,46 @@
   margin: 40px auto;
 }
 
-#clear{
+#main_palette{
+  border-radius: 25px;
+}
+
+.pixelsClass{
+  background-color: white;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+#clear {
+
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
   margin-top: 20px;
   margin-left: 20px;
 }
 
 #erase{
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
   margin-top: 20px;
   margin-left: 20px;
 }
 
 h1{
   text-align: center;
+  font-size: 40px;
+}
+
+.pixelsClass{
+  background-color: white;
 }
