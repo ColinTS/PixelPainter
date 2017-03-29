@@ -18,7 +18,8 @@ class Palette{
       rows.appendChild(pixels);
 
       pixels.addEventListener('click',function(){
-        this.style.backgroundColor = Colors.color();
+        this.style.backgroundColor = Colors.color;
+        console.log(Colors.color);
       });
 
       }

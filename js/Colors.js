@@ -4,7 +4,8 @@ class Colors{
     this._element = document.createElement('div');
     this._element.style.border = border;
     this._element.style.display = display;
-    var colorCache;
+    this._colorCache;
+    this.setColor = this.setColor.bind(this);
 
     for (var i = 1 ; i <= 10; i++){
       var rows_colorSwatch = document.createElement('div');
@@ -21,16 +22,17 @@ class Colors{
         uniqueColors.style.backgroundColor = "rgb(" + (255 - randnumb1) + "," + (255 - randnumb2)  + "," + (255 - randnumb3) +")";
         rows_colorSwatch.appendChild(uniqueColors);
 
-        uniqueColors.addEventListener('click',function(){
-          colorCache = this.style.backgroundColor;
-          console.log(colorCache);
-        });
+        uniqueColors.addEventListener('click',this.setColor);
       }
     }
   }
 
+  setColor(e){
+    this._colorCache = e.target.style.backgroundColor;
+  }
+
   get color() {
-    return colorCache;
+    return this._colorCache;
   }
 
   get element() {
