@@ -1,4 +1,5 @@
 class Colors{
+
   constructor(size, border, display, colorContainer){
     this._element = document.createElement('div');
     this._element.style.border = border;
@@ -28,12 +29,12 @@ class Colors{
     }
   }
 
-  get element() {
-    return this._element;
+  get color() {
+    return colorCache;
   }
 
-  get colorCache() {
-    return colorCache;
+  get element() {
+    return this._element;
   }
 
 }

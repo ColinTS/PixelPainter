@@ -27,5 +27,5 @@ swatchContainer.element.appendChild(eraseButton.element);
 //Append pixels to palette
 var pixelGenerator = new Palette(30, "1px solid black", "table-cell", paletteGrid, colorGenerator);
 paletteGrid.element.appendChild(pixelGenerator.element);
-console.log(colorGenerator.colorCache());
+
 

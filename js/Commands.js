@@ -1,5 +1,4 @@
 'use strict';
-
 // command buttons creation
 
 class Commands{
